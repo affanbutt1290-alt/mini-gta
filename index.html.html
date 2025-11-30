@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Best 100 Games</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+  }
+  header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 { margin-top: 0; }
+  .game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .game-card {
+    background: #e9f5ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .game-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .game-card button {
+    margin-top: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .game-card button:hover { background: #005fcc; }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<header>Top 100 Best Games</header>
+<div class="container">
+  <h2>Play the Most Popular Games</h2>
+  <div class="game-list">
+
+    <!-- 100 GAME CARDS BELOW -->
+    <!-- You can later replace images & add links -->
+
+    <script>
+      const games = [
+        "Free Fire", "Minecraft", "PUBG Mobile", "Fortnite", "Roblox", "Call of Duty Mobile", "GTA V", "Among Us", "Subway Surfers", "Temple Run", "Clash of Clans", "Clash Royale", "Asphalt 9", "Rocket League", "God of War", "Cyberpunk 2077", "Red Dead Redemption 2", "Apex Legends", "Valorant", "League of Legends", "Mobile Legends", "Brawl Stars", "Pokemon Go", "FIFA 23", "eFootball", "Tekken 7", "Mortal Kombat 11", "Bloons TD 6", "Candy Crush", "Hill Climb Racing", "Car Parking Multiplayer", "Need For Speed", "Far Cry 5", "Resident Evil 4", "Hitman 3", "Watch Dogs 2", "Assassin's Creed", "Battlefield 5", "Elden Ring", "The Witcher 3", "Forza Horizon 5", "Counter Strike GO", "Left 4 Dead 2", "Fall Guys", "Stumble Guys", "Gang Beasts", "Human Fall Flat", "Terraria", "ARK Survival", "Rust", "Overwatch", "Star Wars Jedi", "Spiderman PS5", "Geometry Dash", "Real Cricket 22", "Shadow Fight 4", "Vector", "Limbo", "Inside", "Horizon Zero Dawn", "Cuphead", "Stray", "Uncharted 4", "Need for Speed Heat", "Cyber Hunter", "Modern Combat 5", "Dead Trigger 2", "Into the Dead", "Marvel Future Fight", "Injustice 2", "Batman Arkham Knight", "Ludo Star", "8 Ball Pool", "Mini Militia", "Hitman Sniper", "Sniper 3D", "Plants vs Zombies", "Zombie Tsunami", "Jetpack Joyride", "Angry Birds", "Real Racing 3", "NBA 2K", "Genshin Impact", "Warframe", "Dota 2", "Hogwarts Legacy", "Just Cause 4", "For Honor", "Dying Light", "MotoGP", "Call of Duty Warzone", "Sea of Thieves", "Rainbow Six Siege", "Mafia II", "Splinter Cell", "Prototype 2", "Bioshock Infinite"
+      ];
+
+      const container = document.querySelector('.game-list');
+
+      games.forEach(game => {
+        container.innerHTML += `
+          <div class="game-card">
+            <img src="https://via.placeholder.com/300x140" />
+            <h3>${game}</h3>
+            <button>Play Now</button>
+          </div>
+        `;
+      });
+    </script>
+
+  </div>
+</div>
+<footer>© 2025 Best Games Website</footer>
+</body>
+</html>
